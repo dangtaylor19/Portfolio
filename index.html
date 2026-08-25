@@ -1,88 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Daniel Taylor | Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <section class="section" id="title">
-            <div class="titlediv">
-                <h1>Daniel Taylor</h1>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Daniel Taylor — Computer Science Graduate">
+    <title>Daniel Taylor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#projects">Recent Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <button id="theme" aria-label="Toggle theme">☾</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Daniel Taylor</h1>
+            <h2>Computer Science Graduate</h2>
+
+            <p class="intro">
+                I enjoy creating video games and developing graphics programming projects.
+            </p>
+
+            <div class="actions">
+                <a href="https://github.com/dangtaylor19" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/daniel-taylor-167107242/" aria-label="LinkedIn">LinkedIn</a>
             </div>
         </section>
 
-        <section class="section" id="profile">
-            <div class="half">
-                <h2>About me</h2>
-                <p>Hello! I'm Daniel and I am a keen programmer in all things visual.</p>
-            </div>
+        <section id="projects">
+            <h2>My Recent Projects</h2>
 
-            <div class="half">
-                <h2>Skills and Qualifications</h2>
-                <ul>
-                    <li>Programming</li>
-                    <li>Coding</li>
-                    <li>Art</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="section" id="title">
-            <div class="titlediv">
-                <h1>Projects</h1>
-            </div>
-        </section>
+            <div class="projects">
+                <article>
+                    <h3>OpenGL 3D Game Engine</h3>
+                    <p>
+                        An OpenGL game engine with 3D model support and save functionality.
+                    </p>
+                    <img src="gl.png" width="1024px">
+                    </img>
+                    <small>OpenGL · C++ · GLSL</small>
+                    <div class="links">
+                        <a href="https://github.com/">GitHub Repo ↗</a>
+                    </div>
+                </article>
 
-        <section class="section" id="title">
-            <div class="subtitlediv">
-                <h1>Computer Graphics</h1>
-            </div>
-        </section>
+                <article>
+                    <h3>Vulkan 3D Graphics Engine</h3>
+                    <p>
+                        A graphics engine developed using Vulkan with fuctionality for multiple meshes, shaders, materials, and lighting.
+                    </p>
+                    <img src="vulkan.webp" width="512px">
+                    </img>
+                    <small>Vulkan · C++ · GLSL</small>
+                    <div class="links">
+                        <a href="https://github.com/dangtaylor19/Vulkan-Project">GitHub Repo ↗</a>
+                    </div>
+            </article>
 
-        <section class="section" id="projects">
-            <div class="half">
-                <h2>OpenGL Game Engine</h2>
-            </div>
-
-            <div class="half">
-                <h2>Vulkan Rendering Engine</h2>
-            </div>
-        </section>
-
-        <section class="section" id="title">
-            <div class="subtitlediv">
-                <h1>Game Development</h1>
+            <article>
+                <h3>Shader-Focused 4X Strategy Game</h3>
+                <p>
+                    A turn based strategy game with a focus on using shaders and tile lookup textures for map rendering.
+                </p>
+                <img src="4x.webp" width="1024px">
+                </img>
+                <small>Unity · C# · HLSL</small>
+            </article>
             </div>
         </section>
 
-        <section class="section" id="projects">
-            <div class="half">
-                <h2>4X Shader-Focused Strategy Game</h2>
-            </div>
+        <section id="skills">
+            <h2>Skills</h2>
 
-            <div class="half">
-                <h2>Crazy</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>C++</span>
+                <span>Shaders</span>
+                <span>Graphics</span>
+                <span>C#</span>
+                <span>Unity</span>
+                <span>3D Art</span>
             </div>
         </section>
 
-        <section class="section" id="title">
-            <div class="subtitlediv">
-                <h1>Other Projects</h1>
-            </div>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <a class="button" href="mailto:dangtaylor19@gmail.com">
+                Email
+            </a>
         </section>
+    </main>
 
-        <section class="section" id="projects">
-            <div class="half">
-                <h2>HIPC</h2>
-            </div>
+    <footer>
+        <p></p>
+    </footer>
 
-            <div class="half">
-                <h2>Microservices</h2>
-            </div>
-        </section>
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
